@@ -77,37 +77,6 @@ Aplikasi ini dapat dijalankan secara responsif di browser web modern maupun dike
 
 ---
 
-## 📁 Struktur Direktori
-
-```text
-whoosh/
-├── android/                 # Proyek native Android (Capacitor)
-├── assets/                  # Aset statis & logo resolusi tinggi
-├── icons/                   # Ikon aplikasi & PWA manifest icons
-├── public/                  # Aset publik web (logo, manifest, error screen)
-├── scripts/                 # Otomasi pengembang & branch manager
-├── src/
-│   ├── assets/              # Aset visual tema (rantai, banner, ilustrasi)
-│   ├── components/
-│   │   ├── feed/            # Komponen kartu linimasa & bento feed
-│   │   ├── layout/          # Header, Bottom Navigation, Dynamic Island
-│   │   ├── maps/            # Komponen peta Leaflet & GeoJSON wilayah
-│   │   ├── modals/          # Modal tambah/edit momen & autentikasi
-│   │   ├── ruang-kita/      # Komponen modul Ruang Kita
-│   │   └── shared/          # Komponen umum, sorotan, & animasi
-│   ├── composables/         # Composable Vue (useTheme, useGesture, dll)
-│   ├── data/                # Store lokal, geo resolver, dan Supabase client
-│   ├── styles/themes/       # Berkas stylesheet tema (Blue Amber, Zine, Crimson)
-│   ├── views/               # Halaman utama (HomeView, RuangKitaView, Settings)
-│   ├── App.vue              # Root component
-│   └── main.ts              # Entry point aplikasi
-├── capacitor.config.ts      # Konfigurasi Capacitor Android
-├── load-env.js              # Environment loader otomatis
-├── package.json             # Manifest dependensi & script project
-└── vite.config.ts           # Konfigurasi Vite
-```
-
----
 
 ## 🚀 Panduan Memulai
 
@@ -159,36 +128,6 @@ npm run android:debug
 # 3. Build Release APK
 npm run android:release
 ```
-
----
-
-## 🌿 Manajemen Branch
-
-Proyek ini telah dikonfigurasi dengan branch modular untuk mempermudah pemeliharaan:
-
-| Branch | Kegunaan |
-| :--- | :--- |
-| `main` | Versi stabil produksi publik |
-| `develop` | Branch utama pengembangan & staging |
-| `ui/beranda-bento-chains` | Desain Bento Grid, sambungan rantai, dan penyesuaian tema |
-| `feat/ruang-kita` | Fitur Ruang Kita (Love Distance, Diary, Kenangan) |
-| `feat/interactive-maps` | Fitur peta wilayah interaktif, GeoJSON, & Leaflet |
-| `feat/auth-sync` | Otentikasi Supabase & sinkronisasi cloud |
-| `chore/android-capacitor` | Pemeliharaan build Android & konfigurasi Capacitor |
-
-Gunakan helper script bawaan untuk berpindah atau membuat branch dengan cepat:
-```bash
-# Daftar semua branch aktif
-npm run branch:list
-
-# Pindah ke branch lain
-npm run branch:switch <nama-branch>
-
-# Buat branch fitur baru
-npm run branch:new feat/nama-fitur
-```
-
----
 
 ## 📄 Lisensi
 
