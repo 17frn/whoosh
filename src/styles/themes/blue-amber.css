@@ -1,0 +1,635 @@
+/* ══════════════════════════════════════════════════════════════
+   THEME: BLUE AMBER FAMILY (Default, Warm, Cool)
+   Dual-tone paper canvas, organic clothesline, 3D binder clips
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── 1. BLUE AMBER (Default: Warm Cream Paper + Soft Indigo) ── */
+:root,
+[data-theme="blue amber"] {
+  --theme-bg: #F8F8FC;
+  --theme-surface: #FFFFFF;
+  --theme-surface-2: #F8F8FC;
+  --theme-border: #252525;
+  --theme-border-light: #EAE8FC;
+  --theme-text: #252525;
+  --theme-text-muted: #77727A;
+  --theme-accent: #756CE0;
+  --theme-accent-hover: #5F55D4;
+  --theme-accent-light: #EAE8FC;
+  --theme-accent-soft: #EAE8FC;
+  --theme-accent-2: #E9C46A;
+  --theme-accent-amber-soft: #FFF4D6;
+  --theme-dot-line: #C7C4F5;
+  --theme-month-bg: #F8F8FC;
+  --theme-month-label: #252525;
+  --theme-month-count-bg: #EAE8FC;
+  --theme-month-count-text: #4B44B8;
+  --theme-card-bg: #FFFFFF;
+  --theme-card-hover-bg: #F8F8FC;
+  --theme-tag-bg: #EAE8FC;
+  --theme-tag-text: #252525;
+  --theme-header-bg: #F8F8FC;
+  --theme-header-border: #EAE8FC;
+  --theme-header-text: #252525;
+  --theme-empty-border: #C7C4F5;
+  --theme-nav-bg: #FFFFFF;
+  --theme-nav-indicator: #EAE8FC;
+  --theme-canvas-bg: #F8F8FC;
+  --theme-moment-layer1: #FFFFFF;
+  --theme-moment-layer2: #756CE0;
+
+  /* Global card tokens */
+  --bg-color: #F8F8FC;
+  --text-main: #252525;
+  --text-muted: #77727A;
+  --border-light: #EAE8FC;
+  --timeline-card-bg: #FFFFFF;
+  --timeline-card-border: 1px solid var(--border-light);
+  --timeline-card-radius: 12px;
+  --timeline-card-shadow: 0 8px 24px rgba(37, 37, 37, 0.08);
+  --timeline-card-hover-transform: translateY(-4px);
+  --timeline-card-hover-shadow: 0 12px 32px rgba(117, 108, 224, 0.16);
+  --accent-1: #756CE0;
+  --accent-2: #E9C46A;
+  --accent-3: #0ea5e9;
+  --accent-4: #f43f5e;
+  --accent-5: #8b5cf6;
+  --accent-6: #f59e0b;
+  --accent-7: #fd7979;
+  --accent-8: #3f9aae;
+
+  /* Dual-Tone Beranda Tokens */
+  --dual-canvas-upper: #F7F3EC;
+  --dual-canvas-lower: #4E48AD;
+  --dual-text-upper: #1A1648;
+  --dual-text-muted-upper: #6B6484;
+  --dual-text-lower: #FFFFFF;
+  --dual-text-muted-lower: rgba(255, 255, 255, 0.75);
+  --dual-bridge-shadow: rgba(78, 72, 173, 0.18);
+  --dual-header-border: rgba(26, 22, 72, 0.1);
+  --dual-accent: #E8A820;
+  --dual-badge-bg: #F4C46A;
+  --dual-badge-text: #1A1648;
+  --dual-badge-border: #1A1648;
+  --dual-wire-stroke: #B8A898;
+  --dual-wire-shadow: rgba(0, 0, 0, 0.1);
+  --dual-section-border: rgba(199, 196, 245, 0.2);
+  --dual-dropdown-bg: #FFFFFF;
+  --dual-dropdown-text: #1A1648;
+  --dual-dropdown-border: #1A1648;
+  --dual-month-badge-bg: #FFFFFF;
+  --dual-month-badge-text: #101010;
+  --dual-month-count-bg: #F4C46A;
+  --dual-month-count-text: #1A1648;
+  --dual-month-line: rgba(199, 196, 245, 0.3);
+  --dual-trip-dot-bg: #F4C46A;
+  --dual-trip-dot-border: #1A1648;
+  --dual-empty-border: rgba(199, 196, 245, 0.3);
+  --dual-card-bg: #FFFDF9;
+  --dual-card-border: #1A1648;
+  --dual-card-text: #1A1648;
+  --dual-card-muted: #5B5480;
+  --dual-card-inner-border: rgba(26, 22, 72, 0.14);
+  --dual-card-photo-border: #1A1648;
+  --dual-card-photo-bg: #EAE8FC;
+  --dual-eyelet-hole: #201A42;
+  --dual-eyelet-grommet: #C8C4E0;
+  --dual-chain-filter: brightness(2.3) contrast(1.15) grayscale(1) drop-shadow(0 2px 4px rgba(10, 8, 30, 0.45));
+
+  /* ── Clothesline, 3D Binder Clips, & Polaroid Tokens ── */
+  --clothesline-wire-color: #B8A898;
+  --clothesline-wire-shadow: rgba(0, 0, 0, 0.1);
+  --clip-body-fill: #252529;
+  --clip-accent-fill: #E9C46A;
+  --clip-wire-stroke: #94A3B8;
+  --clip-arms-stroke: #CBD5E1;
+  --polaroid-bg: #FFFFFF;
+  --polaroid-border: 1px solid rgba(26, 22, 72, 0.08);
+  --polaroid-shadow: 0 6px 18px rgba(26, 22, 72, 0.07), 0 2px 4px rgba(26, 22, 72, 0.03);
+  --polaroid-hover-shadow: 0 14px 30px rgba(78, 72, 173, 0.16), 0 4px 10px rgba(26, 22, 72, 0.05);
+  --polaroid-washi-1: rgba(244, 196, 106, 0.85);
+  --polaroid-washi-2: rgba(117, 108, 224, 0.75);
+  --polaroid-washi-3: rgba(52, 211, 153, 0.75);
+  --bridge-bg: #4E48AD;
+  --bridge-shadow: 0 -4px 14px rgba(78, 72, 173, 0.22);
+  --bridge-pill-bg: rgba(255, 255, 255, 0.4);
+}
+
+/* ── 2. BLUE AMBER WARM (Cozy Warm: Soft Blue + Terracotta Amber) ── */
+[data-theme="blue amber warm"] {
+  --theme-bg: #fef5e7;
+  --theme-surface: #fffbf0;
+  --theme-surface-2: #fef3e6;
+  --theme-border: #1a1410;
+  --theme-border-light: #dcc9b6;
+  --theme-text: #1a1410;
+  --theme-text-muted: #8b7355;
+  --theme-accent: #5b8dee;
+  --theme-accent-hover: #4a7dd9;
+  --theme-accent-light: #d4e3f7;
+  --theme-accent-soft: #d4e3f7;
+  --theme-accent-2: #f4a460;
+  --theme-dot-line: #a8c5e3;
+  --theme-month-bg: #fef5e7;
+  --theme-month-label: #1a1410;
+  --theme-month-count-bg: #d4e3f7;
+  --theme-month-count-text: #2d5aa6;
+  --theme-card-bg: #fffbf0;
+  --theme-card-hover-bg: #fef9ed;
+  --theme-tag-bg: #e8d5c4;
+  --theme-tag-text: #5b4432;
+  --theme-header-bg: #fef5e7;
+  --theme-header-border: #dcc9b6;
+  --theme-header-text: #1a1410;
+  --theme-empty-border: #a8c5e3;
+  --theme-nav-bg: #fffbf0;
+  --theme-nav-indicator: #d4e3f7;
+  --theme-canvas-bg: #fef5e7;
+  --theme-moment-layer1: #fffbf0;
+  --theme-moment-layer2: #5b8dee;
+  --theme-icon-primary: #5b8dee;
+  --theme-icon-secondary: #f4a460;
+  --theme-icon-success: #d97706;
+  --theme-icon-warning: #be7c4b;
+  --theme-icon-danger: #c84b31;
+  --theme-modal-bg: #fffbf0;
+  --theme-modal-border: #dcc9b6;
+  --theme-dropdown-bg: #fffbf0;
+  --theme-dropdown-hover: #fef9ed;
+  --bg-color: #fef5e7;
+  --text-main: #1a1410;
+  --text-muted: #8b7355;
+  --border-light: #dcc9b6;
+  --timeline-card-bg: #fffbf0;
+  --timeline-card-border: 1px solid #dcc9b6;
+  --timeline-card-radius: 12px;
+  --timeline-card-shadow: 0 4px 12px rgba(26, 20, 16, 0.08);
+  --timeline-card-hover-transform: translateY(-2px);
+  --timeline-card-hover-shadow: 0 8px 20px rgba(91, 141, 238, 0.1);
+  --accent-1: #5b8dee;
+  --accent-2: #f4a460;
+  --accent-3: #d97706;
+  --accent-4: #be7c4b;
+  --accent-5: #8b6b47;
+  --accent-6: #a78bfa;
+  --accent-7: #f97316;
+  --accent-8: #ea580c;
+
+  /* Dual-Tone Beranda Tokens */
+  --dual-canvas-upper: #FAF4EB;
+  --dual-canvas-lower: #385C96;
+  --dual-text-upper: #1A1410;
+  --dual-text-muted-upper: #8B7355;
+  --dual-text-lower: #FFFFFF;
+  --dual-text-muted-lower: rgba(255, 255, 255, 0.78);
+  --dual-bridge-shadow: rgba(56, 92, 150, 0.22);
+  --dual-header-border: rgba(26, 20, 16, 0.12);
+  --dual-accent: #E59550;
+  --dual-badge-bg: #F4A460;
+  --dual-badge-text: #1A1410;
+  --dual-badge-border: #1A1410;
+  --dual-wire-stroke: #C2B09B;
+  --dual-wire-shadow: rgba(26, 20, 16, 0.1);
+  --dual-section-border: rgba(212, 227, 247, 0.25);
+  --dual-dropdown-bg: #FFFBF0;
+  --dual-dropdown-text: #1A1410;
+  --dual-dropdown-border: #1A1410;
+  --dual-month-badge-bg: #FFFBF0;
+  --dual-month-badge-text: #1A1410;
+  --dual-month-count-bg: #F4A460;
+  --dual-month-count-text: #1A1410;
+  --dual-month-line: rgba(212, 227, 247, 0.35);
+  --dual-trip-dot-bg: #F4A460;
+  --dual-trip-dot-border: #1A1410;
+  --dual-empty-border: rgba(212, 227, 247, 0.35);
+  --dual-card-bg: #FFFDF9;
+  --dual-card-border: #1A1410;
+  --dual-card-text: #1A1410;
+  --dual-card-muted: #735E47;
+  --dual-card-inner-border: rgba(26, 20, 16, 0.14);
+  --dual-card-photo-border: #1A1410;
+  --dual-card-photo-bg: #F3EBDD;
+  --dual-eyelet-hole: #1A1410;
+  --dual-eyelet-grommet: #D6C7B7;
+  --dual-chain-filter: brightness(2.2) sepia(0.12) contrast(1.15) drop-shadow(0 2px 4px rgba(26, 20, 16, 0.45));
+
+  /* ── Clothesline, 3D Binder Clips, & Polaroid Tokens ── */
+  --clothesline-wire-color: #C2B09B;
+  --clothesline-wire-shadow: rgba(26, 20, 16, 0.1);
+  --clip-body-fill: #3E3228;
+  --clip-accent-fill: #F4A460;
+  --clip-wire-stroke: #D6C7B7;
+  --clip-arms-stroke: #D6C7B7;
+  --polaroid-bg: #FFFDF9;
+  --polaroid-border: 1px solid rgba(139, 115, 85, 0.12);
+  --polaroid-shadow: 0 6px 18px rgba(59, 44, 32, 0.08), 0 2px 4px rgba(59, 44, 32, 0.03);
+  --polaroid-hover-shadow: 0 14px 30px rgba(56, 92, 150, 0.18);
+  --polaroid-washi-1: rgba(244, 164, 96, 0.85);
+  --polaroid-washi-2: rgba(91, 141, 238, 0.75);
+  --polaroid-washi-3: rgba(217, 119, 6, 0.75);
+  --bridge-bg: #385C96;
+  --bridge-shadow: 0 -4px 14px rgba(56, 92, 150, 0.25);
+  --bridge-pill-bg: rgba(255, 255, 255, 0.4);
+}
+
+/* ── 3. BLUE AMBER COOL (Fresh Modern: Cool Blue + Bright Amber) ── */
+[data-theme="blue amber cool"] {
+  --theme-bg: #f0f4f8;
+  --theme-surface: #ffffff;
+  --theme-surface-2: #e8f1f8;
+  --theme-border: #1e3a5f;
+  --theme-border-light: #bdd7ee;
+  --theme-text: #1e3a5f;
+  --theme-text-muted: #5a7fa0;
+  --theme-accent: #2563eb;
+  --theme-accent-hover: #1d4ed8;
+  --theme-accent-light: #dbeafe;
+  --theme-accent-soft: #dbeafe;
+  --theme-accent-2: #f59e0b;
+  --theme-dot-line: #7bb3e8;
+  --theme-month-bg: #f0f4f8;
+  --theme-month-label: #1e3a5f;
+  --theme-month-count-bg: #dbeafe;
+  --theme-month-count-text: #0c4a6e;
+  --theme-card-bg: #ffffff;
+  --theme-card-hover-bg: #f8fcff;
+  --theme-tag-bg: #e0f2fe;
+  --theme-tag-text: #0c4a6e;
+  --theme-header-bg: #f0f4f8;
+  --theme-header-border: #bdd7ee;
+  --theme-header-text: #1e3a5f;
+  --theme-empty-border: #7bb3e8;
+  --theme-nav-bg: #ffffff;
+  --theme-nav-indicator: #dbeafe;
+  --theme-canvas-bg: #f0f4f8;
+  --theme-moment-layer1: #ffffff;
+  --theme-moment-layer2: #2563eb;
+  --theme-icon-primary: #2563eb;
+  --theme-icon-secondary: #f59e0b;
+  --theme-icon-success: #10b981;
+  --theme-icon-warning: #f59e0b;
+  --theme-icon-danger: #dc2626;
+  --theme-modal-bg: #ffffff;
+  --theme-modal-border: #bdd7ee;
+  --theme-dropdown-bg: #ffffff;
+  --theme-dropdown-hover: #f0f4f8;
+  --bg-color: #f0f4f8;
+  --text-main: #1e3a5f;
+  --text-muted: #5a7fa0;
+  --border-light: #bdd7ee;
+  --timeline-card-bg: #ffffff;
+  --timeline-card-border: 1px solid #bdd7ee;
+  --timeline-card-radius: 12px;
+  --timeline-card-shadow: 0 4px 12px rgba(30, 58, 95, 0.08);
+  --timeline-card-hover-transform: translateY(-2px);
+  --timeline-card-hover-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+  --accent-1: #2563eb;
+  --accent-2: #f59e0b;
+  --accent-3: #10b981;
+  --accent-4: #06b6d4;
+  --accent-5: #8b5cf6;
+  --accent-6: #ec4899;
+  --accent-7: #f87171;
+  --accent-8: #22d3ee;
+
+  /* Dual-Tone Beranda Tokens */
+  --dual-canvas-upper: #F4F7FA;
+  --dual-canvas-lower: #1E40AF;
+  --dual-text-upper: #1E3A5F;
+  --dual-text-muted-upper: #5A7FA0;
+  --dual-text-lower: #FFFFFF;
+  --dual-text-muted-lower: rgba(255, 255, 255, 0.80);
+  --dual-bridge-shadow: rgba(30, 64, 175, 0.25);
+  --dual-header-border: rgba(30, 58, 95, 0.12);
+  --dual-accent: #F59E0B;
+  --dual-badge-bg: #F59E0B;
+  --dual-badge-text: #0F172A;
+  --dual-badge-border: #0F172A;
+  --dual-wire-stroke: #94A3B8;
+  --dual-wire-shadow: rgba(15, 23, 42, 0.1);
+  --dual-section-border: rgba(189, 215, 238, 0.25);
+  --dual-dropdown-bg: #FFFFFF;
+  --dual-dropdown-text: #0F172A;
+  --dual-dropdown-border: #0F172A;
+  --dual-month-badge-bg: #FFFFFF;
+  --dual-month-badge-text: #0F172A;
+  --dual-month-count-bg: #F59E0B;
+  --dual-month-count-text: #0F172A;
+  --dual-month-line: rgba(189, 215, 238, 0.35);
+  --dual-trip-dot-bg: #F59E0B;
+  --dual-trip-dot-border: #0F172A;
+  --dual-empty-border: rgba(189, 215, 238, 0.35);
+  --dual-card-bg: #FFFFFF;
+  --dual-card-border: #0F172A;
+  --dual-card-text: #0F172A;
+  --dual-card-muted: #475569;
+  --dual-card-inner-border: rgba(15, 23, 42, 0.14);
+  --dual-card-photo-border: #0F172A;
+  --dual-card-photo-bg: #E2E8F0;
+  --dual-eyelet-hole: #0F172A;
+  --dual-eyelet-grommet: #CBD5E1;
+  --dual-chain-filter: brightness(2.4) contrast(1.2) grayscale(1) drop-shadow(0 2px 4px rgba(15, 23, 42, 0.45));
+
+  /* ── Clothesline, 3D Binder Clips, & Polaroid Tokens ── */
+  --clothesline-wire-color: #94A3B8;
+  --clothesline-wire-shadow: rgba(15, 23, 42, 0.1);
+  --clip-body-fill: #1E293B;
+  --clip-accent-fill: #F59E0B;
+  --clip-wire-stroke: #94A3B8;
+  --clip-arms-stroke: #94A3B8;
+  --polaroid-bg: #FFFFFF;
+  --polaroid-border: 1px solid rgba(30, 58, 95, 0.1);
+  --polaroid-shadow: 0 6px 18px rgba(30, 58, 95, 0.07), 0 2px 4px rgba(30, 58, 95, 0.03);
+  --polaroid-hover-shadow: 0 14px 30px rgba(30, 64, 175, 0.18);
+  --polaroid-washi-1: rgba(245, 158, 11, 0.85);
+  --polaroid-washi-2: rgba(37, 99, 235, 0.75);
+  --polaroid-washi-3: rgba(16, 185, 129, 0.75);
+  --bridge-bg: #1E40AF;
+  --bridge-shadow: 0 -4px 14px rgba(30, 64, 175, 0.28);
+  --bridge-pill-bg: rgba(255, 255, 255, 0.4);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   BLUE AMBER FAMILY — SCOPED BERANDA DUAL-TONE CANVAS LAYOUT
+   ══════════════════════════════════════════════════════════════ */
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .timeline-active-view.is-home-tab.portfolio-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .timeline-active-view.is-home-tab,
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home,
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .timeline-view-wrapper {
+  background-color: var(--dual-canvas-upper) !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+@supports (selector(:has(*))) {
+  :is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]):has(.timeline-active-view.is-home-tab),
+  :is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) body:has(.timeline-active-view.is-home-tab) {
+    background-color: var(--dual-canvas-upper) !important;
+  }
+}
+
+/* ── Hero Header ── */
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .app-main-header {
+  background-color: var(--dual-canvas-upper) !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-top: 28px !important;
+  padding-bottom: 24px !important;
+  padding-left: clamp(14px, 4vw, 24px) !important;
+  padding-right: clamp(14px, 4vw, 24px) !important;
+  box-sizing: border-box !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .greeting-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 32px !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .greeting-title {
+  color: var(--dual-text-upper) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .greeting-subtitle {
+  color: var(--dual-text-muted-upper) !important;
+}
+
+/* ── Sorotan Terkini Section ── */
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .recent-highlights-section {
+  position: relative !important;
+  background-color: var(--dual-canvas-upper) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+/* Ensure old pseudo-element is disabled in favor of native transition bridge */
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .recent-highlights-section::after {
+  display: none !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .highlights-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 25 !important;
+  background-color: var(--dual-canvas-upper) !important;
+  border-bottom: 1.5px solid var(--dual-header-border) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding-top: 14px !important;
+  padding-bottom: 12px !important;
+  padding-left: clamp(14px, 4vw, 24px) !important;
+  padding-right: clamp(14px, 4vw, 24px) !important;
+  box-sizing: border-box !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .highlights-header .header-title {
+  color: var(--dual-text-upper) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .highlights-header .header-title i {
+  color: var(--dual-accent) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .highlights-header .header-count {
+  background: var(--dual-badge-bg) !important;
+  border: 1.5px solid var(--dual-badge-border) !important;
+  color: var(--dual-badge-text) !important;
+  font-weight: 800 !important;
+  box-shadow: 1.5px 1.5px 0 var(--dual-badge-border) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .highlights-scroll-container {
+  position: relative !important;
+  z-index: 2 !important;
+  background-color: transparent !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding-top: 34px !important;
+  padding-bottom: 18px !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .highlights-track {
+  position: relative !important;
+  z-index: 2 !important;
+  padding-left: clamp(14px, 4vw, 24px) !important;
+  padding-right: clamp(14px, 4vw, 24px) !important;
+  box-sizing: border-box !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .clothesline-wire {
+  stroke: var(--dual-wire-stroke) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .clothesline-shadow {
+  stroke: var(--dual-wire-shadow) !important;
+}
+
+/* ── Galeri & Lower Canvas Bridge ── */
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .timeline-content-wrapper {
+  background-color: var(--dual-canvas-lower) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .timeline-section-header {
+  background-color: var(--dual-canvas-lower) !important;
+  border-bottom: 1px solid var(--dual-section-border) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding-top: 16px !important;
+  padding-bottom: 14px !important;
+  padding-left: clamp(14px, 4vw, 24px) !important;
+  padding-right: clamp(14px, 4vw, 24px) !important;
+  box-sizing: border-box !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .timeline-header-left {
+  padding-left: 0 !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .timeline-header-actions {
+  padding-right: 0 !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .timeline-section-title {
+  color: var(--dual-text-lower) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .month-dropdown-btn,
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .year-dropdown-btn {
+  background: var(--dual-dropdown-bg) !important;
+  color: var(--dual-dropdown-text) !important;
+  border: 1.5px solid var(--dual-dropdown-border) !important;
+  box-shadow: 1.5px 1.5px 0 var(--dual-dropdown-border) !important;
+  font-weight: 700 !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .month-dropdown-btn .dropdown-icon,
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .year-dropdown-btn .dropdown-icon {
+  color: var(--dual-accent) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .month-dropdown-item.is-active .radio-inner,
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .year-dropdown-item.is-active .radio-inner {
+  background: var(--dual-accent) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .month-dropdown-item.is-active,
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .year-dropdown-item.is-active {
+  background: var(--dual-canvas-lower) !important;
+  color: var(--dual-text-lower) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .timeline-swipeable-area {
+  background-color: var(--dual-canvas-lower) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .timeline-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-bottom: 80px !important;
+  box-sizing: border-box !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .timeline-main-line {
+  display: none !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .month-group,
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .chain-month-group {
+  margin-left: clamp(14px, 4vw, 24px) !important;
+  margin-right: clamp(14px, 4vw, 24px) !important;
+  box-sizing: border-box !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .month-header {
+  background-color: var(--dual-canvas-lower) !important;
+  margin-left: calc(-1 * clamp(14px, 4vw, 24px)) !important;
+  margin-right: calc(-1 * clamp(14px, 4vw, 24px)) !important;
+  padding-left: clamp(14px, 4vw, 24px) !important;
+  padding-right: clamp(14px, 4vw, 24px) !important;
+  box-sizing: border-box !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .month-label-wrap {
+  background: var(--dual-month-badge-bg) !important;
+  border: 1.5px solid var(--dual-badge-border) !important;
+  box-shadow: 2px 2px 0 var(--dual-badge-border) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .month-label-wrap .month-name {
+  color: var(--dual-month-badge-text) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .month-label-wrap .month-count {
+  background: var(--dual-month-count-bg) !important;
+  color: var(--dual-month-count-text) !important;
+  font-weight: 800 !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .month-line {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--dual-month-line) 0px,
+    var(--dual-month-line) 5px,
+    transparent 5px,
+    transparent 10px
+  ) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .trip-dot {
+  background: var(--dual-trip-dot-bg) !important;
+  border: 2.5px solid var(--dual-trip-dot-border) !important;
+  box-shadow: 0 0 0 2px rgba(244, 196, 106, 0.4), 1.5px 1.5px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .empty-state {
+  margin-left: clamp(14px, 4vw, 24px) !important;
+  margin-right: clamp(14px, 4vw, 24px) !important;
+  border-color: var(--dual-empty-border) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .empty-state h3 {
+  color: var(--dual-text-lower) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .empty-state p {
+  color: var(--dual-text-muted-lower) !important;
+}
+
+:is([data-theme="blue amber"], [data-theme="blue amber warm"], [data-theme="blue amber cool"]) .tab-content-home .empty-state .empty-icon {
+  color: var(--dual-accent) !important;
+}

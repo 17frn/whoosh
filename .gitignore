@@ -1,0 +1,56 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies and build outputs
+node_modules/
+dist/
+dist-ssr/
+dev-dist/
+bundle-report.html
+*.local
+
+# Editor directories and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+**/.sokudo/
+.impeccable/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+
+# Android build outputs & local config
+android/local.properties
+android/.gradle/
+android/app/build/
+android/build/
+android/.idea/
+android/captures/
+android/.sokudo/
+*.apk
+*.aab
+*.keystore
+*.jks
+google-services.json
+
+# Temporary projects / Embedded repos
+my-new-app/

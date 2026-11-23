@@ -1,0 +1,103 @@
+/* ══════════════════════════════════════════════════════════════
+   THEME: ZINE (Editorial Monochrome & Vibrant Yellow Accents)
+   ══════════════════════════════════════════════════════════════ */
+
+[data-theme="zine"] {
+  --theme-bg: #f5f5f0;
+  --theme-surface: #ffffff;
+  --theme-surface-2: #eeeeea;
+  --theme-border: #101010;
+  --theme-border-light: #c9c9c0;
+  --theme-text: #101010;
+  --theme-text-muted: #555550;
+  --theme-accent: #fef08a;
+  --theme-accent-hover: #fde047;
+  --theme-accent-light: #fefce8;
+  --theme-accent-soft: #fefce8;
+  --theme-accent-2: #f43f5e;
+  --theme-dot-line: #101010;
+  --theme-month-bg: #101010;
+  --theme-month-label: #ffffff;
+  --theme-month-count-bg: #fef08a;
+  --theme-month-count-text: #101010;
+  --theme-card-bg: #fef08a;
+  --theme-card-hover-bg: #fde047;
+  --theme-tag-bg: #f5f5f0;
+  --theme-tag-text: #101010;
+  --theme-header-bg: #101010;
+  --theme-header-border: #101010;
+  --theme-header-text: #ffffff;
+  --theme-empty-border: #101010;
+  --theme-nav-bg: #f5f5f0;
+  --theme-nav-indicator: #fef08a;
+  --theme-canvas-bg: #f5f5f0;
+  --theme-moment-layer1: #E8E085;
+  --theme-moment-layer2: #101010;
+
+  /* Global card variables */
+  --bg-color: #f5f5f0;
+  --text-main: #101010;
+  --text-muted: #555550;
+  --border-light: #c9c9c0;
+  --timeline-card-bg: #ffffff;
+  --timeline-card-border: 2px solid #101010;
+  --timeline-card-radius: 0px;
+  --timeline-card-shadow: 4px 4px 0 #101010;
+  --timeline-card-hover-transform: translate(-2px, -2px);
+  --timeline-card-hover-shadow: 6px 6px 0 #101010;
+  --accent-1: #6366f1;
+  --accent-2: #14b8a6;
+  --accent-3: #0ea5e9;
+  --accent-4: #f43f5e;
+  --accent-5: #8b5cf6;
+  --accent-6: #f59e0b;
+  --accent-7: #fd7979;
+  --accent-8: #3f9aae;
+
+  /* ── Clothesline, 3D Binder Clips, & Polaroid Tokens (Zine Edition) ── */
+  --clothesline-wire-color: #3f3f46;
+  --clothesline-wire-shadow: rgba(0, 0, 0, 0.12);
+  --clip-body-fill: #18181b;
+  --clip-accent-fill: #fef08a;
+  --clip-wire-stroke: #71717a;
+  --clip-arms-stroke: #71717a;
+  --polaroid-bg: #ffffff;
+  --polaroid-border: 1px solid rgba(16, 16, 16, 0.12);
+  --polaroid-shadow: 0 6px 16px rgba(16, 16, 16, 0.08), 0 2px 4px rgba(16, 16, 16, 0.03);
+  --polaroid-hover-shadow: 0 14px 28px rgba(16, 16, 16, 0.14), 0 4px 8px rgba(16, 16, 16, 0.05);
+  --polaroid-washi-1: rgba(254, 240, 138, 0.9);
+  --polaroid-washi-2: rgba(244, 63, 94, 0.8);
+  --polaroid-washi-3: rgba(20, 184, 166, 0.8);
+  --bridge-bg: #101010;
+  --bridge-shadow: 0 -4px 14px rgba(0, 0, 0, 0.25);
+  --bridge-pill-bg: #fef08a;
+}
+
+/* ── Zine Scoped Highlights & Header Adaptations ── */
+[data-theme="zine"] .recent-highlights-section {
+  background-color: var(--theme-bg);
+}
+
+[data-theme="zine"] .highlights-header {
+  background-color: var(--theme-bg);
+  border-bottom: 1px solid var(--theme-border-light);
+}
+
+[data-theme="zine"] .highlights-header .header-title {
+  color: var(--theme-text);
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+[data-theme="zine"] .highlights-header .header-title i {
+  color: #101010;
+}
+
+[data-theme="zine"] .highlights-header .header-count {
+  background: var(--theme-accent);
+  border: 1.5px solid #101010;
+  color: #101010;
+  font-weight: 800;
+  box-shadow: 1.5px 1.5px 0 #101010;
+  border-radius: 4px;
+}

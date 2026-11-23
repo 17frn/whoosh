@@ -1,0 +1,52 @@
+/* ══════════════════════════════════════════════════════════════
+   THEME SYSTEM ARCHITECTURE
+   Modular theme stylesheets imported per theme family
+   ══════════════════════════════════════════════════════════════ */
+@import "./styles/themes/blue-amber.css";
+@import "./styles/themes/zine.css";
+@import "./styles/themes/crimson.css";
+
+/* ══════════════════════════════════════════════════════════════
+   GLOBAL BASE STYLES & RESETS
+   ══════════════════════════════════════════════════════════════ */
+html {
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.portfolio-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+/* === TABLET (481px - 1024px) === */
+@media (max-width: 1024px) {
+  .portfolio-container {
+    padding: 50px 30px;
+  }
+}
+
+/* === MOBILE (≤ 480px) === */
+@media (max-width: 480px) {
+  .portfolio-container {
+    padding: 20px 16px;
+  }
+}

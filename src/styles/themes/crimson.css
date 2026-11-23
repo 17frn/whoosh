@@ -1,0 +1,100 @@
+/* ══════════════════════════════════════════════════════════════
+   THEME: CRIMSON (Warm Lavender & Romantic Crimson-Plum Accents)
+   ══════════════════════════════════════════════════════════════ */
+
+[data-theme="crimson"] {
+  --theme-bg: #f0f0ff;
+  --theme-surface: #ffffff;
+  --theme-surface-2: #e8e8fa;
+  --theme-border: #2d2d6e;
+  --theme-border-light: #c4c4f0;
+  --theme-text: #1e1b4b;
+  --theme-text-muted: #6b6b9a;
+  --theme-accent: #f43f5e;
+  --theme-accent-hover: #e11d48;
+  --theme-accent-light: #ffe4e6;
+  --theme-accent-soft: #ffe4e6;
+  --theme-accent-2: #a78bfa;
+  --theme-dot-line: #a5a5e8;
+  --theme-month-bg: #e8e8fa;
+  --theme-month-label: #1e1b4b;
+  --theme-month-count-bg: #ffe4e6;
+  --theme-month-count-text: #be123c;
+  --theme-card-bg: #ffffff;
+  --theme-card-hover-bg: #fff1f2;
+  --theme-tag-bg: #f5f3ff;
+  --theme-tag-text: #4c1d95;
+  --theme-header-bg: linear-gradient(135deg, #e0e7ff 0%, #fff1f2 100%);
+  --theme-header-border: #c4c4f0;
+  --theme-header-text: #1e1b4b;
+  --theme-empty-border: #a5a5e8;
+  --theme-nav-bg: #e8e8fa;
+  --theme-nav-indicator: #f43f5e;
+  --theme-canvas-bg: #f0f0ff;
+  --theme-moment-layer1: #ffffff;
+  --theme-moment-layer2: #f43f5e;
+
+  /* Global card variables */
+  --bg-color: #f0f0ff;
+  --text-main: #1e1b4b;
+  --text-muted: #6b6b9a;
+  --border-light: #c4c4f0;
+  --timeline-card-bg: #ffffff;
+  --timeline-card-border: 1px solid #c4c4f0;
+  --timeline-card-radius: 16px;
+  --timeline-card-shadow: 0 4px 16px rgba(45, 45, 110, 0.12);
+  --timeline-card-hover-transform: translateY(-3px);
+  --timeline-card-hover-shadow: 0 8px 24px rgba(45, 45, 110, 0.2);
+  --accent-1: #6366f1;
+  --accent-2: #14b8a6;
+  --accent-3: #0ea5e9;
+  --accent-4: #f43f5e;
+  --accent-5: #8b5cf6;
+  --accent-6: #f59e0b;
+  --accent-7: #fd7979;
+  --accent-8: #3f9aae;
+
+  /* ── Clothesline, 3D Binder Clips, & Polaroid Tokens (Crimson Edition) ── */
+  --clothesline-wire-color: #9e7d8a;
+  --clothesline-wire-shadow: rgba(45, 26, 34, 0.1);
+  --clip-body-fill: #2d1a22;
+  --clip-accent-fill: #f43f5e;
+  --clip-wire-stroke: #e2b6c3;
+  --clip-arms-stroke: #e2b6c3;
+  --polaroid-bg: #ffffff;
+  --polaroid-border: 1px solid rgba(244, 63, 94, 0.12);
+  --polaroid-shadow: 0 6px 18px rgba(45, 26, 34, 0.07), 0 2px 4px rgba(45, 26, 34, 0.03);
+  --polaroid-hover-shadow: 0 14px 28px rgba(244, 63, 94, 0.16);
+  --polaroid-washi-1: rgba(244, 63, 94, 0.8);
+  --polaroid-washi-2: rgba(167, 139, 250, 0.8);
+  --polaroid-washi-3: rgba(251, 146, 60, 0.8);
+  --bridge-bg: #2d2240;
+  --bridge-shadow: 0 -4px 14px rgba(45, 26, 34, 0.25);
+  --bridge-pill-bg: rgba(255, 228, 230, 0.5);
+}
+
+/* ── Crimson Scoped Highlights Adaptations ── */
+[data-theme="crimson"] .recent-highlights-section {
+  background-color: var(--theme-bg);
+}
+
+[data-theme="crimson"] .highlights-header {
+  background-color: var(--theme-bg);
+  border-bottom: 1px solid var(--theme-border-light);
+}
+
+[data-theme="crimson"] .highlights-header .header-title {
+  color: var(--theme-text);
+}
+
+[data-theme="crimson"] .highlights-header .header-title i {
+  color: var(--theme-accent);
+}
+
+[data-theme="crimson"] .highlights-header .header-count {
+  background: var(--theme-accent-light);
+  border: 1px solid var(--theme-accent);
+  color: var(--theme-accent);
+  font-weight: 700;
+  border-radius: 8px;
+}

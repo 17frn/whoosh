@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">WHOOSH</string>
+    <string name="title_activity_main">WHOOSH</string>
+    <string name="package_name">com.whoosh.app</string>
+    <string name="custom_url_scheme">com.whoosh.app</string>
+</resources>

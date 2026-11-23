@@ -1,0 +1,151 @@
+/* Non-scoped CSS for Leaflet HTML Markers & Tooltips */
+.leaflet-neo-moment-divicon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-neo-moment-pin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.leaflet-neo-moment-pin .pin-halo {
+  position: absolute;
+  top: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--pin-accent, #3b82f6);
+  opacity: 0.35;
+  animation: pin-halo-pulse 1.8s infinite;
+}
+
+@keyframes pin-halo-pulse {
+  0% { transform: scale(0.9); opacity: 0.5; }
+  70% { transform: scale(1.4); opacity: 0; }
+  100% { transform: scale(0.9); opacity: 0; }
+}
+
+.leaflet-neo-moment-pin .pin-core {
+  position: relative;
+  z-index: 2;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--pin-accent, #3b82f6);
+  border: 2px solid #1a1a2e;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  box-shadow: 2px 2px 0 #1a1a2e;
+  transition: transform 0.12s ease;
+}
+
+.leaflet-neo-moment-pin:hover .pin-core {
+  transform: scale(1.15);
+}
+
+.leaflet-neo-moment-pin .pin-label {
+  margin-top: 2px;
+  background: #1a1a2e;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+.leaflet-neo-tooltip {
+  background: #ffffff !important;
+  border: 2px solid #1a1a2e !important;
+  border-radius: 8px !important;
+  box-shadow: 2px 2px 0 #1a1a2e !important;
+  color: #1a1a2e !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  padding: 6px 10px !important;
+}
+.leaflet-neo-tooltip::before {
+  border-top-color: #1a1a2e !important;
+}
+
+/* Region Badges (Penanda Kota/Kabupaten) */
+.leaflet-neo-region-divicon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-neo-region-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #ffffff;
+  border: 1.5px solid #1a1a2e;
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1a1a2e;
+  box-shadow: 2px 2px 0 rgba(26, 26, 46, 0.8);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.leaflet-neo-region-badge:hover {
+  transform: scale(1.08);
+}
+
+/* ── Marker Cluster Styles (Neo-brutalist) ─────────────────────────── */
+.leaflet-neo-cluster-divicon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-neo-cluster-pin {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #f59e0b;
+  border: 2.5px solid #1a1a2e;
+  box-shadow: 2px 2px 0 #1a1a2e;
+  color: #1a1a2e;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.leaflet-neo-cluster-pin:hover {
+  transform: scale(1.15);
+}
+
+.leaflet-neo-cluster-pin .cluster-halo {
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.4);
+  animation: pin-halo-pulse 2s infinite;
+  pointer-events: none;
+}
+
+.leaflet-neo-cluster-pin .cluster-count {
+  position: relative;
+  z-index: 2;
+  letter-spacing: -0.02em;
+}

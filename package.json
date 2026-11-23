@@ -1,0 +1,50 @@
+{
+  "name": "whoosh",
+  "private": true,
+  "version": "1.5.1",
+  "type": "module",
+  "scripts": {
+    "dev": "node load-env.js && vite",
+    "build": "node load-env.js && vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "android:release": "export NODE_ENV=production && node load-env.js && npm run build && npx cap sync android && cd android && ./gradlew assembleRelease",
+    "android:debug": "node load-env.js && npm run build && npx cap sync android && cd android && ./gradlew assembleDebug",
+    "cap:run": "node load-env.js && npx cap run android -l",
+    "cap:sync": "node load-env.js && npx cap sync android",
+    "ip": "node scripts/get-local-ip.js",
+    "cap:update-ip": "node scripts/switch-network.js auto && npx cap sync android",
+    "rebuild": "bash scripts/rebuild-debug.sh",
+    "rebuild:win": "scripts\\rebuild-debug.bat",
+    "install-apk": "node scripts/install-apk.js",
+    "diagnose": "node scripts/diagnose.js",
+    "switch-network": "node scripts/switch-network.js"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.4.2",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.4.2",
+    "@capacitor/device": "^8.0.3",
+    "@remixicon/vue": "^4.9.0",
+    "@supabase/supabase-js": "^2.111.0",
+    "idb": "^8.0.3",
+    "impeccable": "^4.1.0",
+    "leaflet": "^1.9.4",
+    "motion-v": "^2.8.0",
+    "sortablejs": "^1.15.7",
+    "vue": "^3.5.39"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.6.8",
+    "@types/leaflet": "^1.9.22",
+    "@types/node": "^24.13.2",
+    "@types/sortablejs": "^1.15.9",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vue/tsconfig": "^0.9.1",
+    "rollup-plugin-visualizer": "^7.1.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1",
+    "vite-plugin-pwa": "^1.3.0",
+    "vue-tsc": "^3.3.5"
+  }
+}
