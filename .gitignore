@@ -16,8 +16,7 @@ bundle-report.html
 *.local
 
 # Editor directories and OS files
-.vscode/*
-!.vscode/extensions.json
+.vscode/
 .idea/
 .DS_Store
 Thumbs.db
@@ -27,6 +26,13 @@ Thumbs.db
 *.sln
 *.sw?
 **/.sokudo/
+
+# AI Agent Workspaces & Tooling Caches
+.agent/
+.agents/
+.github/
+.kiro/
+.kombai/
 .impeccable/
 
 # Environment Variables & Secrets
@@ -54,3 +60,18 @@ google-services.json
 
 # Temporary projects / Embedded repos
 my-new-app/
+
+# Internal setup & debugging guides
+FIREWALL_SETUP.md
+LIVE_DEBUG_NETWORK_GUIDE.md
+LIVE_DEBUG_QUICKSTART.md
+PROJECT_ENV_SETUP.md
+PROVINCE_MAP_IMPLEMENTATION.md
+ANDROID_SDK_SETUP.md
+CAPACITOR_CONFIG_GUIDE.md
+
+# Redundant local dev scripts
+dev.bat
+dev.sh
+setup-android-sdk.bat
+setup-android-sdk.sh
