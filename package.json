@@ -17,7 +17,10 @@
     "rebuild:win": "scripts\\rebuild-debug.bat",
     "install-apk": "node scripts/install-apk.js",
     "diagnose": "node scripts/diagnose.js",
-    "switch-network": "node scripts/switch-network.js"
+    "switch-network": "node scripts/switch-network.js",
+    "branch:list": "node scripts/branch-manager.js list",
+    "branch:new": "node scripts/branch-manager.js new",
+    "branch:switch": "node scripts/branch-manager.js switch"
   },
   "dependencies": {
     "@capacitor/android": "^8.4.2",
